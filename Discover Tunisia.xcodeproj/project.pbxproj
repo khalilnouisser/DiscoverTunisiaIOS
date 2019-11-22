@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCA7ECE52388A26000B8D320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7ECE42388A26000B8D320 /* AppDelegate.swift */; };
+		FCA7ECE72388A26000B8D320 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7ECE62388A26000B8D320 /* SceneDelegate.swift */; };
+		FCA7ECE92388A26000B8D320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7ECE82388A26000B8D320 /* ViewController.swift */; };
+		FCA7ECEC2388A26000B8D320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA7ECEA2388A26000B8D320 /* Main.storyboard */; };
+		FCA7ECEE2388A26200B8D320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA7ECED2388A26200B8D320 /* Assets.xcassets */; };
+		FCA7ECF12388A26200B8D320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA7ECEF2388A26200B8D320 /* LaunchScreen.storyboard */; };
+		FCA7ECFC2388A26200B8D320 /* Discover_TunisiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7ECFB2388A26200B8D320 /* Discover_TunisiaTests.swift */; };
+		FCA7ED072388A26200B8D320 /* Discover_TunisiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7ED062388A26200B8D320 /* Discover_TunisiaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCA7ECF82388A26200B8D320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCA7ECD92388A26000B8D320 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCA7ECE02388A26000B8D320;
+			remoteInfo = "Discover Tunisia";
+		};
+		FCA7ED032388A26200B8D320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCA7ECD92388A26000B8D320 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCA7ECE02388A26000B8D320;
+			remoteInfo = "Discover Tunisia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCA7ECE12388A26000B8D320 /* Discover Tunisia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discover Tunisia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA7ECE42388A26000B8D320 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCA7ECE62388A26000B8D320 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FCA7ECE82388A26000B8D320 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCA7ECEB2388A26000B8D320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCA7ECED2388A26200B8D320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCA7ECF02388A26200B8D320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCA7ECF22388A26200B8D320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA7ECF72388A26200B8D320 /* Discover TunisiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Discover TunisiaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA7ECFB2388A26200B8D320 /* Discover_TunisiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover_TunisiaTests.swift; sourceTree = "<group>"; };
+		FCA7ECFD2388A26200B8D320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA7ED022388A26200B8D320 /* Discover TunisiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Discover TunisiaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA7ED062388A26200B8D320 /* Discover_TunisiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover_TunisiaUITests.swift; sourceTree = "<group>"; };
+		FCA7ED082388A26200B8D320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCA7ECDE2388A26000B8D320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA7ECF42388A26200B8D320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA7ECFF2388A26200B8D320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCA7ECD82388A26000B8D320 = {
+			isa = PBXGroup;
+			children = (
+				FCA7ECE32388A26000B8D320 /* Discover Tunisia */,
+				FCA7ECFA2388A26200B8D320 /* Discover TunisiaTests */,
+				FCA7ED052388A26200B8D320 /* Discover TunisiaUITests */,
+				FCA7ECE22388A26000B8D320 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCA7ECE22388A26000B8D320 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCA7ECE12388A26000B8D320 /* Discover Tunisia.app */,
+				FCA7ECF72388A26200B8D320 /* Discover TunisiaTests.xctest */,
+				FCA7ED022388A26200B8D320 /* Discover TunisiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCA7ECE32388A26000B8D320 /* Discover Tunisia */ = {
+			isa = PBXGroup;
+			children = (
+				FCA7ECE42388A26000B8D320 /* AppDelegate.swift */,
+				FCA7ECE62388A26000B8D320 /* SceneDelegate.swift */,
+				FCA7ECE82388A26000B8D320 /* ViewController.swift */,
+				FCA7ECEA2388A26000B8D320 /* Main.storyboard */,
+				FCA7ECED2388A26200B8D320 /* Assets.xcassets */,
+				FCA7ECEF2388A26200B8D320 /* LaunchScreen.storyboard */,
+				FCA7ECF22388A26200B8D320 /* Info.plist */,
+			);
+			path = "Discover Tunisia";
+			sourceTree = "<group>";
+		};
+		FCA7ECFA2388A26200B8D320 /* Discover TunisiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCA7ECFB2388A26200B8D320 /* Discover_TunisiaTests.swift */,
+				FCA7ECFD2388A26200B8D320 /* Info.plist */,
+			);
+			path = "Discover TunisiaTests";
+			sourceTree = "<group>";
+		};
+		FCA7ED052388A26200B8D320 /* Discover TunisiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCA7ED062388A26200B8D320 /* Discover_TunisiaUITests.swift */,
+				FCA7ED082388A26200B8D320 /* Info.plist */,
+			);
+			path = "Discover TunisiaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCA7ECE02388A26000B8D320 /* Discover Tunisia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCA7ED0B2388A26200B8D320 /* Build configuration list for PBXNativeTarget "Discover Tunisia" */;
+			buildPhases = (
+				FCA7ECDD2388A26000B8D320 /* Sources */,
+				FCA7ECDE2388A26000B8D320 /* Frameworks */,
+				FCA7ECDF2388A26000B8D320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Discover Tunisia";
+			productName = "Discover Tunisia";
+			productReference = FCA7ECE12388A26000B8D320 /* Discover Tunisia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCA7ECF62388A26200B8D320 /* Discover TunisiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCA7ED0E2388A26200B8D320 /* Build configuration list for PBXNativeTarget "Discover TunisiaTests" */;
+			buildPhases = (
+				FCA7ECF32388A26200B8D320 /* Sources */,
+				FCA7ECF42388A26200B8D320 /* Frameworks */,
+				FCA7ECF52388A26200B8D320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCA7ECF92388A26200B8D320 /* PBXTargetDependency */,
+			);
+			name = "Discover TunisiaTests";
+			productName = "Discover TunisiaTests";
+			productReference = FCA7ECF72388A26200B8D320 /* Discover TunisiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCA7ED012388A26200B8D320 /* Discover TunisiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCA7ED112388A26200B8D320 /* Build configuration list for PBXNativeTarget "Discover TunisiaUITests" */;
+			buildPhases = (
+				FCA7ECFE2388A26200B8D320 /* Sources */,
+				FCA7ECFF2388A26200B8D320 /* Frameworks */,
+				FCA7ED002388A26200B8D320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCA7ED042388A26200B8D320 /* PBXTargetDependency */,
+			);
+			name = "Discover TunisiaUITests";
+			productName = "Discover TunisiaUITests";
+			productReference = FCA7ED022388A26200B8D320 /* Discover TunisiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCA7ECD92388A26000B8D320 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Streamerz;
+				TargetAttributes = {
+					FCA7ECE02388A26000B8D320 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					FCA7ECF62388A26200B8D320 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = FCA7ECE02388A26000B8D320;
+					};
+					FCA7ED012388A26200B8D320 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = FCA7ECE02388A26000B8D320;
+					};
+				};
+			};
+			buildConfigurationList = FCA7ECDC2388A26000B8D320 /* Build configuration list for PBXProject "Discover Tunisia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCA7ECD82388A26000B8D320;
+			productRefGroup = FCA7ECE22388A26000B8D320 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCA7ECE02388A26000B8D320 /* Discover Tunisia */,
+				FCA7ECF62388A26200B8D320 /* Discover TunisiaTests */,
+				FCA7ED012388A26200B8D320 /* Discover TunisiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCA7ECDF2388A26000B8D320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA7ECF12388A26200B8D320 /* LaunchScreen.storyboard in Resources */,
+				FCA7ECEE2388A26200B8D320 /* Assets.xcassets in Resources */,
+				FCA7ECEC2388A26000B8D320 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA7ECF52388A26200B8D320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA7ED002388A26200B8D320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCA7ECDD2388A26000B8D320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA7ECE92388A26000B8D320 /* ViewController.swift in Sources */,
+				FCA7ECE52388A26000B8D320 /* AppDelegate.swift in Sources */,
+				FCA7ECE72388A26000B8D320 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA7ECF32388A26200B8D320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA7ECFC2388A26200B8D320 /* Discover_TunisiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA7ECFE2388A26200B8D320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA7ED072388A26200B8D320 /* Discover_TunisiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCA7ECF92388A26200B8D320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCA7ECE02388A26000B8D320 /* Discover Tunisia */;
+			targetProxy = FCA7ECF82388A26200B8D320 /* PBXContainerItemProxy */;
+		};
+		FCA7ED042388A26200B8D320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCA7ECE02388A26000B8D320 /* Discover Tunisia */;
+			targetProxy = FCA7ED032388A26200B8D320 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCA7ECEA2388A26000B8D320 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCA7ECEB2388A26000B8D320 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCA7ECEF2388A26200B8D320 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCA7ECF02388A26200B8D320 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCA7ED092388A26200B8D320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCA7ED0A2388A26200B8D320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCA7ED0C2388A26200B8D320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4447HNT5A2;
+				INFOPLIST_FILE = "Discover Tunisia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.streamerz.Discover-Tunisia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCA7ED0D2388A26200B8D320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4447HNT5A2;
+				INFOPLIST_FILE = "Discover Tunisia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.streamerz.Discover-Tunisia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCA7ED0F2388A26200B8D320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4447HNT5A2;
+				INFOPLIST_FILE = "Discover TunisiaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.streamerz.Discover-TunisiaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Discover Tunisia.app/Discover Tunisia";
+			};
+			name = Debug;
+		};
+		FCA7ED102388A26200B8D320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4447HNT5A2;
+				INFOPLIST_FILE = "Discover TunisiaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.streamerz.Discover-TunisiaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Discover Tunisia.app/Discover Tunisia";
+			};
+			name = Release;
+		};
+		FCA7ED122388A26200B8D320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4447HNT5A2;
+				INFOPLIST_FILE = "Discover TunisiaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.streamerz.Discover-TunisiaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Discover Tunisia";
+			};
+			name = Debug;
+		};
+		FCA7ED132388A26200B8D320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4447HNT5A2;
+				INFOPLIST_FILE = "Discover TunisiaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.streamerz.Discover-TunisiaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Discover Tunisia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCA7ECDC2388A26000B8D320 /* Build configuration list for PBXProject "Discover Tunisia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCA7ED092388A26200B8D320 /* Debug */,
+				FCA7ED0A2388A26200B8D320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCA7ED0B2388A26200B8D320 /* Build configuration list for PBXNativeTarget "Discover Tunisia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCA7ED0C2388A26200B8D320 /* Debug */,
+				FCA7ED0D2388A26200B8D320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCA7ED0E2388A26200B8D320 /* Build configuration list for PBXNativeTarget "Discover TunisiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCA7ED0F2388A26200B8D320 /* Debug */,
+				FCA7ED102388A26200B8D320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCA7ED112388A26200B8D320 /* Build configuration list for PBXNativeTarget "Discover TunisiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCA7ED122388A26200B8D320 /* Debug */,
+				FCA7ED132388A26200B8D320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCA7ECD92388A26000B8D320 /* Project object */;
+}
