@@ -3,10 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27123E3E94A21FC25C8915E5 /* Pods_Discover_Tunisia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0EA9C553CE76809516D2FB /* Pods_Discover_Tunisia.framework */; };
+		FC200DBB238BC94C000A8F91 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200DBA238BC94C000A8F91 /* InfoViewController.swift */; };
+		FC34DB4A239ADCD300119503 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DB49239ADCD300119503 /* MainNavigationController.swift */; };
+		FC34DB4D239AEA3500119503 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FC34DB4C239AEA3500119503 /* SDWebImage */; };
+		FC34DB4F239AEA3500119503 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC34DB4E239AEA3500119503 /* SDWebImageMapKit */; };
+		FC34DB51239AF1BD00119503 /* DiscoveryMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DB50239AF1BD00119503 /* DiscoveryMainViewController.swift */; };
+		FC34DB53239AF3D900119503 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DB52239AF3D900119503 /* City.swift */; };
+		FC34DB55239B0B2400119503 /* EventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DB54239B0B2300119503 /* EventCalendar.swift */; };
+		FC34DB57239BAE2100119503 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DB56239BAE2100119503 /* Event.swift */; };
+		FC34DB59239BD7DD00119503 /* Sejour.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DB58239BD7DD00119503 /* Sejour.swift */; };
+		FC34DB5B239BD91300119503 /* Monsejourelement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DB5A239BD91300119503 /* Monsejourelement.swift */; };
+		FC34DB5D239BE26900119503 /* Incontournable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DB5C239BE26900119503 /* Incontournable.swift */; };
+		FC34DB5F239BE2EB00119503 /* IncontournableAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DB5E239BE2EB00119503 /* IncontournableAddress.swift */; };
+		FC3BCBA5239A3946002124B1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BCBA4239A3946002124B1 /* SignUpViewController.swift */; };
+		FC3BCBA7239A6B57002124B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BCBA6239A6B57002124B1 /* Extensions.swift */; };
+		FC3BCBA9239A6CD2002124B1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BCBA8239A6CD2002124B1 /* AuthService.swift */; };
+		FC3BCBAB239A79E1002124B1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BCBAA239A79E1002124B1 /* User.swift */; };
+		FC908D1D238B157800F6750A /* UnavoidableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC908D1C238B157800F6750A /* UnavoidableTableViewCell.swift */; };
+		FC985D26238C14990086F60F /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985D25238C14990086F60F /* LeftMenuViewController.swift */; };
+		FC985D28238C28540086F60F /* DetailEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985D27238C28540086F60F /* DetailEventViewController.swift */; };
+		FC985D2A238C3DCB0086F60F /* SejourDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985D29238C3DCB0086F60F /* SejourDetailViewController.swift */; };
+		FC985D2C238C40880086F60F /* SejourItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985D2B238C40880086F60F /* SejourItemTableViewCell.swift */; };
+		FC985D2E238C49D80086F60F /* DetailSejourItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985D2D238C49D80086F60F /* DetailSejourItemViewController.swift */; };
+		FC985D30238C555A0086F60F /* DetailActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985D2F238C555A0086F60F /* DetailActivityViewController.swift */; };
+		FC985D32238C69310086F60F /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985D31238C69310086F60F /* DiscoveryViewController.swift */; };
+		FC985D34238C6D2B0086F60F /* DiscoveryPageUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985D33238C6D2B0086F60F /* DiscoveryPageUIViewController.swift */; };
+		FC985D36238C6FC10086F60F /* DiscoveryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985D35238C6FC10086F60F /* DiscoveryContentViewController.swift */; };
+		FC985D38238C77940086F60F /* map.json in Resources */ = {isa = PBXBuildFile; fileRef = FC985D37238C77940086F60F /* map.json */; };
+		FC9C93C92389990C00E52AA5 /* LoadingBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93BF2389990A00E52AA5 /* LoadingBtn.swift */; };
+		FC9C93CA2389990C00E52AA5 /* GradientUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93C02389990A00E52AA5 /* GradientUIView.swift */; };
+		FC9C93CC2389990C00E52AA5 /* roundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93C22389990B00E52AA5 /* roundedImageView.swift */; };
+		FC9C93CD2389990C00E52AA5 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93C32389990B00E52AA5 /* Extensions+UIView.swift */; };
+		FC9C93CE2389990C00E52AA5 /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93C42389990B00E52AA5 /* RoundedLabel.swift */; };
+		FC9C93CF2389990C00E52AA5 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93C52389990B00E52AA5 /* RoundedShadowView.swift */; };
+		FC9C93D02389990C00E52AA5 /* LoadingShadowRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93C62389990B00E52AA5 /* LoadingShadowRoundedButton.swift */; };
+		FC9C93D12389990C00E52AA5 /* RoundedEmtyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93C72389990B00E52AA5 /* RoundedEmtyButton.swift */; };
+		FC9C93D22389990C00E52AA5 /* ModernUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93C82389990B00E52AA5 /* ModernUITextField.swift */; };
+		FC9C93D4238999B900E52AA5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9C93D3238999B900E52AA5 /* Colors.xcassets */; };
+		FC9C93D623899BEB00E52AA5 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93D523899BEB00E52AA5 /* WalkthroughViewController.swift */; };
+		FC9C93D82389A3FE00E52AA5 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93D72389A3FE00E52AA5 /* WalkthroughPageViewController.swift */; };
+		FC9C93DA2389A64000E52AA5 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93D92389A64000E52AA5 /* WalkthroughContentViewController.swift */; };
+		FC9C93DC238A087900E52AA5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93DB238A087900E52AA5 /* LoginViewController.swift */; };
+		FC9C93DE238A0E3500E52AA5 /* RoundedEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93DD238A0E3400E52AA5 /* RoundedEmptyView.swift */; };
+		FC9C93E0238A877400E52AA5 /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93DF238A877400E52AA5 /* LoadingScreenViewController.swift */; };
+		FC9C93E2238A8CD800E52AA5 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93E1238A8CD800E52AA5 /* MainTabBarViewController.swift */; };
+		FC9C93E4238A94A400E52AA5 /* OriginalImageTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93E3238A94A400E52AA5 /* OriginalImageTabBar.swift */; };
+		FC9C93E6238A9C2100E52AA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93E5238A9C2100E52AA5 /* HomeViewController.swift */; };
+		FC9C93EA238A9E0A00E52AA5 /* SectionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93E8238A9E0A00E52AA5 /* SectionHeaderTableViewCell.swift */; };
+		FC9C93EB238A9E0A00E52AA5 /* SectionHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9C93E9238A9E0A00E52AA5 /* SectionHeaderTableViewCell.xib */; };
+		FC9C93ED238AA88600E52AA5 /* RoundedCornerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93EC238AA88600E52AA5 /* RoundedCornerImageView.swift */; };
+		FC9C93EF238AABCD00E52AA5 /* ListEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93EE238AABCD00E52AA5 /* ListEventsTableViewCell.swift */; };
+		FC9C93F1238AB6B600E52AA5 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93F0238AB6B600E52AA5 /* EventCollectionViewCell.swift */; };
+		FC9C93F3238AD1EB00E52AA5 /* ThreeColumnUICollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93F2238AD1EB00E52AA5 /* ThreeColumnUICollectionViewLayout.swift */; };
+		FC9C93F5238B0A9D00E52AA5 /* SejourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93F4238B0A9D00E52AA5 /* SejourTableViewCell.swift */; };
+		FC9C93F7238B0B5700E52AA5 /* ImageTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C93F6238B0B5700E52AA5 /* ImageTextCollectionViewCell.swift */; };
 		FCA7ECE52388A26000B8D320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7ECE42388A26000B8D320 /* AppDelegate.swift */; };
 		FCA7ECE72388A26000B8D320 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7ECE62388A26000B8D320 /* SceneDelegate.swift */; };
 		FCA7ECE92388A26000B8D320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7ECE82388A26000B8D320 /* ViewController.swift */; };
@@ -15,6 +70,20 @@
 		FCA7ECF12388A26200B8D320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA7ECEF2388A26200B8D320 /* LaunchScreen.storyboard */; };
 		FCA7ECFC2388A26200B8D320 /* Discover_TunisiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7ECFB2388A26200B8D320 /* Discover_TunisiaTests.swift */; };
 		FCA7ED072388A26200B8D320 /* Discover_TunisiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7ED062388A26200B8D320 /* Discover_TunisiaUITests.swift */; };
+		FCC7C0B92399475300506ED7 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC7C0B82399475300506ED7 /* ApiService.swift */; };
+		FCC7C0BB239951CA00506ED7 /* BackendError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC7C0BA239951CA00506ED7 /* BackendError.swift */; };
+		FCCF4022238C7BB4005926BA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCF4021238C7BB4005926BA /* MapViewController.swift */; };
+		FCE7643C238C0371004F1259 /* PanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE7643B238C0371004F1259 /* PanelController.swift */; };
+		FCF6C39A239998F400E8CB83 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6C399239998F400E8CB83 /* Utils.swift */; };
+		FCF6C39C23999A1C00E8CB83 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6C39B23999A1C00E8CB83 /* Location.swift */; };
+		FCF6C39E23999A4400E8CB83 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6C39D23999A4400E8CB83 /* Request.swift */; };
+		FCF6C3A023999A5C00E8CB83 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6C39F23999A5C00E8CB83 /* Current.swift */; };
+		FCF6C3A223999A9C00E8CB83 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6C3A123999A9C00E8CB83 /* Weather.swift */; };
+		FCF6C3A52399A91A00E8CB83 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6C3A32399A91900E8CB83 /* EmptyTableViewCell.swift */; };
+		FCF6C3A62399A91A00E8CB83 /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF6C3A42399A91900E8CB83 /* EmptyTableViewCell.xib */; };
+		FCF6C3A82399AAC000E8CB83 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6C3A72399AAC000E8CB83 /* WeatherTableViewCell.swift */; };
+		FCFFE77B238B2FB500245C30 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFFE77A238B2FB500245C30 /* PhotosViewController.swift */; };
+		FCFFE77D238B35C200245C30 /* ThreeEqualColumnUICollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFFE77C238B35C200245C30 /* ThreeEqualColumnUICollectionViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +104,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F197240B947F2998538F9BB /* Pods-Discover Tunisia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Discover Tunisia.release.xcconfig"; path = "Target Support Files/Pods-Discover Tunisia/Pods-Discover Tunisia.release.xcconfig"; sourceTree = "<group>"; };
+		4F0EA9C553CE76809516D2FB /* Pods_Discover_Tunisia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Discover_Tunisia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0361B54C97FDE7A5CF5F9D /* Pods-Discover Tunisia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Discover Tunisia.debug.xcconfig"; path = "Target Support Files/Pods-Discover Tunisia/Pods-Discover Tunisia.debug.xcconfig"; sourceTree = "<group>"; };
+		FC200DBA238BC94C000A8F91 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		FC34DB49239ADCD300119503 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		FC34DB50239AF1BD00119503 /* DiscoveryMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryMainViewController.swift; sourceTree = "<group>"; };
+		FC34DB52239AF3D900119503 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		FC34DB54239B0B2300119503 /* EventCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCalendar.swift; sourceTree = "<group>"; };
+		FC34DB56239BAE2100119503 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		FC34DB58239BD7DD00119503 /* Sejour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sejour.swift; sourceTree = "<group>"; };
+		FC34DB5A239BD91300119503 /* Monsejourelement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monsejourelement.swift; sourceTree = "<group>"; };
+		FC34DB5C239BE26900119503 /* Incontournable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incontournable.swift; sourceTree = "<group>"; };
+		FC34DB5E239BE2EB00119503 /* IncontournableAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncontournableAddress.swift; sourceTree = "<group>"; };
+		FC3BCBA4239A3946002124B1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FC3BCBA6239A6B57002124B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FC3BCBA8239A6CD2002124B1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FC3BCBAA239A79E1002124B1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FC908D1C238B157800F6750A /* UnavoidableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnavoidableTableViewCell.swift; sourceTree = "<group>"; };
+		FC985D25238C14990086F60F /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		FC985D27238C28540086F60F /* DetailEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEventViewController.swift; sourceTree = "<group>"; };
+		FC985D29238C3DCB0086F60F /* SejourDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SejourDetailViewController.swift; sourceTree = "<group>"; };
+		FC985D2B238C40880086F60F /* SejourItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SejourItemTableViewCell.swift; sourceTree = "<group>"; };
+		FC985D2D238C49D80086F60F /* DetailSejourItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSejourItemViewController.swift; sourceTree = "<group>"; };
+		FC985D2F238C555A0086F60F /* DetailActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailActivityViewController.swift; sourceTree = "<group>"; };
+		FC985D31238C69310086F60F /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		FC985D33238C6D2B0086F60F /* DiscoveryPageUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryPageUIViewController.swift; sourceTree = "<group>"; };
+		FC985D35238C6FC10086F60F /* DiscoveryContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryContentViewController.swift; sourceTree = "<group>"; };
+		FC985D37238C77940086F60F /* map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map.json; sourceTree = SOURCE_ROOT; };
+		FC9C93BF2389990A00E52AA5 /* LoadingBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingBtn.swift; sourceTree = "<group>"; };
+		FC9C93C02389990A00E52AA5 /* GradientUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientUIView.swift; sourceTree = "<group>"; };
+		FC9C93C22389990B00E52AA5 /* roundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedImageView.swift; sourceTree = "<group>"; };
+		FC9C93C32389990B00E52AA5 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		FC9C93C42389990B00E52AA5 /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
+		FC9C93C52389990B00E52AA5 /* RoundedShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		FC9C93C62389990B00E52AA5 /* LoadingShadowRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingShadowRoundedButton.swift; sourceTree = "<group>"; };
+		FC9C93C72389990B00E52AA5 /* RoundedEmtyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedEmtyButton.swift; sourceTree = "<group>"; };
+		FC9C93C82389990B00E52AA5 /* ModernUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernUITextField.swift; sourceTree = "<group>"; };
+		FC9C93D3238999B900E52AA5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FC9C93D523899BEB00E52AA5 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		FC9C93D72389A3FE00E52AA5 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		FC9C93D92389A64000E52AA5 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		FC9C93DB238A087900E52AA5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC9C93DD238A0E3400E52AA5 /* RoundedEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedEmptyView.swift; sourceTree = "<group>"; };
+		FC9C93DF238A877400E52AA5 /* LoadingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenViewController.swift; sourceTree = "<group>"; };
+		FC9C93E1238A8CD800E52AA5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		FC9C93E3238A94A400E52AA5 /* OriginalImageTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalImageTabBar.swift; sourceTree = "<group>"; };
+		FC9C93E5238A9C2100E52AA5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FC9C93E8238A9E0A00E52AA5 /* SectionHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		FC9C93E9238A9E0A00E52AA5 /* SectionHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		FC9C93EC238AA88600E52AA5 /* RoundedCornerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerImageView.swift; sourceTree = "<group>"; };
+		FC9C93EE238AABCD00E52AA5 /* ListEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsTableViewCell.swift; sourceTree = "<group>"; };
+		FC9C93F0238AB6B600E52AA5 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC9C93F2238AD1EB00E52AA5 /* ThreeColumnUICollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeColumnUICollectionViewLayout.swift; sourceTree = "<group>"; };
+		FC9C93F4238B0A9D00E52AA5 /* SejourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SejourTableViewCell.swift; sourceTree = "<group>"; };
+		FC9C93F6238B0B5700E52AA5 /* ImageTextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextCollectionViewCell.swift; sourceTree = "<group>"; };
 		FCA7ECE12388A26000B8D320 /* Discover Tunisia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discover Tunisia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA7ECE42388A26000B8D320 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA7ECE62388A26000B8D320 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +173,20 @@
 		FCA7ED022388A26200B8D320 /* Discover TunisiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Discover TunisiaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA7ED062388A26200B8D320 /* Discover_TunisiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover_TunisiaUITests.swift; sourceTree = "<group>"; };
 		FCA7ED082388A26200B8D320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC7C0B82399475300506ED7 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		FCC7C0BA239951CA00506ED7 /* BackendError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendError.swift; sourceTree = "<group>"; };
+		FCCF4021238C7BB4005926BA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FCE7643B238C0371004F1259 /* PanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelController.swift; sourceTree = "<group>"; };
+		FCF6C399239998F400E8CB83 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FCF6C39B23999A1C00E8CB83 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FCF6C39D23999A4400E8CB83 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		FCF6C39F23999A5C00E8CB83 /* Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
+		FCF6C3A123999A9C00E8CB83 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		FCF6C3A32399A91900E8CB83 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		FCF6C3A42399A91900E8CB83 /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
+		FCF6C3A72399AAC000E8CB83 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		FCFFE77A238B2FB500245C30 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		FCFFE77C238B35C200245C30 /* ThreeEqualColumnUICollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeEqualColumnUICollectionViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +194,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC34DB4D239AEA3500119503 /* SDWebImage in Frameworks */,
+				FC34DB4F239AEA3500119503 /* SDWebImageMapKit in Frameworks */,
+				27123E3E94A21FC25C8915E5 /* Pods_Discover_Tunisia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +217,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90B3F63AD3CD0C9394D6E662 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F0EA9C553CE76809516D2FB /* Pods_Discover_Tunisia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D277A123F6BAFF3F89B7F555 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A0361B54C97FDE7A5CF5F9D /* Pods-Discover Tunisia.debug.xcconfig */,
+				1F197240B947F2998538F9BB /* Pods-Discover Tunisia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC2DBB2C238985ED001CB877 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC9C93D523899BEB00E52AA5 /* WalkthroughViewController.swift */,
+				FC9C93D72389A3FE00E52AA5 /* WalkthroughPageViewController.swift */,
+				FC9C93D92389A64000E52AA5 /* WalkthroughContentViewController.swift */,
+				FC9C93DB238A087900E52AA5 /* LoginViewController.swift */,
+				FC3BCBA4239A3946002124B1 /* SignUpViewController.swift */,
+				FC9C93DF238A877400E52AA5 /* LoadingScreenViewController.swift */,
+				FC9C93E1238A8CD800E52AA5 /* MainTabBarViewController.swift */,
+				FC9C93E5238A9C2100E52AA5 /* HomeViewController.swift */,
+				FCFFE77A238B2FB500245C30 /* PhotosViewController.swift */,
+				FC200DBA238BC94C000A8F91 /* InfoViewController.swift */,
+				FCE7643B238C0371004F1259 /* PanelController.swift */,
+				FC985D25238C14990086F60F /* LeftMenuViewController.swift */,
+				FC985D27238C28540086F60F /* DetailEventViewController.swift */,
+				FC985D29238C3DCB0086F60F /* SejourDetailViewController.swift */,
+				FC985D2D238C49D80086F60F /* DetailSejourItemViewController.swift */,
+				FC985D2F238C555A0086F60F /* DetailActivityViewController.swift */,
+				FC985D31238C69310086F60F /* DiscoveryViewController.swift */,
+				FC985D33238C6D2B0086F60F /* DiscoveryPageUIViewController.swift */,
+				FC985D35238C6FC10086F60F /* DiscoveryContentViewController.swift */,
+				FCCF4021238C7BB4005926BA /* MapViewController.swift */,
+				FC34DB49239ADCD300119503 /* MainNavigationController.swift */,
+				FC34DB50239AF1BD00119503 /* DiscoveryMainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC9C93BE2389986600E52AA5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FC3BCBA6239A6B57002124B1 /* Extensions.swift */,
+				FC9C93DD238A0E3400E52AA5 /* RoundedEmptyView.swift */,
+				FC9C93C32389990B00E52AA5 /* Extensions+UIView.swift */,
+				FC9C93C02389990A00E52AA5 /* GradientUIView.swift */,
+				FC9C93BF2389990A00E52AA5 /* LoadingBtn.swift */,
+				FC9C93C62389990B00E52AA5 /* LoadingShadowRoundedButton.swift */,
+				FC9C93C82389990B00E52AA5 /* ModernUITextField.swift */,
+				FC9C93C72389990B00E52AA5 /* RoundedEmtyButton.swift */,
+				FC9C93C22389990B00E52AA5 /* roundedImageView.swift */,
+				FC9C93C42389990B00E52AA5 /* RoundedLabel.swift */,
+				FC9C93C52389990B00E52AA5 /* RoundedShadowView.swift */,
+				FC9C93E3238A94A400E52AA5 /* OriginalImageTabBar.swift */,
+				FC9C93EC238AA88600E52AA5 /* RoundedCornerImageView.swift */,
+				FC9C93F2238AD1EB00E52AA5 /* ThreeColumnUICollectionViewLayout.swift */,
+				FCFFE77C238B35C200245C30 /* ThreeEqualColumnUICollectionViewLayout.swift */,
+				FCF6C399239998F400E8CB83 /* Utils.swift */,
+				FC3BCBA8239A6CD2002124B1 /* AuthService.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FC9C93E7238A9DE200E52AA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCF6C3A32399A91900E8CB83 /* EmptyTableViewCell.swift */,
+				FCF6C3A42399A91900E8CB83 /* EmptyTableViewCell.xib */,
+				FC9C93E8238A9E0A00E52AA5 /* SectionHeaderTableViewCell.swift */,
+				FC9C93E9238A9E0A00E52AA5 /* SectionHeaderTableViewCell.xib */,
+				FC9C93EE238AABCD00E52AA5 /* ListEventsTableViewCell.swift */,
+				FC9C93F0238AB6B600E52AA5 /* EventCollectionViewCell.swift */,
+				FC9C93F4238B0A9D00E52AA5 /* SejourTableViewCell.swift */,
+				FC908D1C238B157800F6750A /* UnavoidableTableViewCell.swift */,
+				FC9C93F6238B0B5700E52AA5 /* ImageTextCollectionViewCell.swift */,
+				FC985D2B238C40880086F60F /* SejourItemTableViewCell.swift */,
+				FCF6C3A72399AAC000E8CB83 /* WeatherTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FCA7ECD82388A26000B8D320 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +312,8 @@
 				FCA7ECFA2388A26200B8D320 /* Discover TunisiaTests */,
 				FCA7ED052388A26200B8D320 /* Discover TunisiaUITests */,
 				FCA7ECE22388A26000B8D320 /* Products */,
+				D277A123F6BAFF3F89B7F555 /* Pods */,
+				90B3F63AD3CD0C9394D6E662 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +330,20 @@
 		FCA7ECE32388A26000B8D320 /* Discover Tunisia */ = {
 			isa = PBXGroup;
 			children = (
+				FCC7C0B72399470E00506ED7 /* Networking */,
+				FCC7C0B6239946F800506ED7 /* Entities */,
+				FC9C93E7238A9DE200E52AA5 /* Views */,
+				FC9C93BE2389986600E52AA5 /* Tools */,
+				FC2DBB2C238985ED001CB877 /* Controllers */,
 				FCA7ECE42388A26000B8D320 /* AppDelegate.swift */,
 				FCA7ECE62388A26000B8D320 /* SceneDelegate.swift */,
 				FCA7ECE82388A26000B8D320 /* ViewController.swift */,
+				FC985D37238C77940086F60F /* map.json */,
 				FCA7ECEA2388A26000B8D320 /* Main.storyboard */,
 				FCA7ECED2388A26200B8D320 /* Assets.xcassets */,
 				FCA7ECEF2388A26200B8D320 /* LaunchScreen.storyboard */,
 				FCA7ECF22388A26200B8D320 /* Info.plist */,
+				FC9C93D3238999B900E52AA5 /* Colors.xcassets */,
 			);
 			path = "Discover Tunisia";
 			sourceTree = "<group>";
@@ -128,6 +366,34 @@
 			path = "Discover TunisiaUITests";
 			sourceTree = "<group>";
 		};
+		FCC7C0B6239946F800506ED7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FCF6C39B23999A1C00E8CB83 /* Location.swift */,
+				FCF6C39D23999A4400E8CB83 /* Request.swift */,
+				FCF6C39F23999A5C00E8CB83 /* Current.swift */,
+				FCF6C3A123999A9C00E8CB83 /* Weather.swift */,
+				FC3BCBAA239A79E1002124B1 /* User.swift */,
+				FC34DB52239AF3D900119503 /* City.swift */,
+				FC34DB54239B0B2300119503 /* EventCalendar.swift */,
+				FC34DB56239BAE2100119503 /* Event.swift */,
+				FC34DB58239BD7DD00119503 /* Sejour.swift */,
+				FC34DB5A239BD91300119503 /* Monsejourelement.swift */,
+				FC34DB5C239BE26900119503 /* Incontournable.swift */,
+				FC34DB5E239BE2EB00119503 /* IncontournableAddress.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FCC7C0B72399470E00506ED7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FCC7C0B82399475300506ED7 /* ApiService.swift */,
+				FCC7C0BA239951CA00506ED7 /* BackendError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,15 +401,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCA7ED0B2388A26200B8D320 /* Build configuration list for PBXNativeTarget "Discover Tunisia" */;
 			buildPhases = (
+				D885A3B9D89066DFA38D4E37 /* [CP] Check Pods Manifest.lock */,
 				FCA7ECDD2388A26000B8D320 /* Sources */,
 				FCA7ECDE2388A26000B8D320 /* Frameworks */,
 				FCA7ECDF2388A26000B8D320 /* Resources */,
+				E792802CE6573088CC6FB7D4 /* [CP] Embed Pods Frameworks */,
+				D9CC0F6045352A5B9EAFBBAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Discover Tunisia";
+			packageProductDependencies = (
+				FC34DB4C239AEA3500119503 /* SDWebImage */,
+				FC34DB4E239AEA3500119503 /* SDWebImageMapKit */,
+			);
 			productName = "Discover Tunisia";
 			productReference = FCA7ECE12388A26000B8D320 /* Discover Tunisia.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +489,10 @@
 				Base,
 			);
 			mainGroup = FCA7ECD82388A26000B8D320;
+			packageReferences = (
+				FCF6C3A92399BEF600E8CB83 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				FC34DB4B239AEA3500119503 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = FCA7ECE22388A26000B8D320 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +509,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF6C3A62399A91A00E8CB83 /* EmptyTableViewCell.xib in Resources */,
 				FCA7ECF12388A26200B8D320 /* LaunchScreen.storyboard in Resources */,
+				FC9C93D4238999B900E52AA5 /* Colors.xcassets in Resources */,
+				FC985D38238C77940086F60F /* map.json in Resources */,
+				FC9C93EB238A9E0A00E52AA5 /* SectionHeaderTableViewCell.xib in Resources */,
 				FCA7ECEE2388A26200B8D320 /* Assets.xcassets in Resources */,
 				FCA7ECEC2388A26000B8D320 /* Main.storyboard in Resources */,
 			);
@@ -254,14 +535,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D885A3B9D89066DFA38D4E37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Discover Tunisia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9CC0F6045352A5B9EAFBBAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Discover Tunisia/Pods-Discover Tunisia-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Discover Tunisia/Pods-Discover Tunisia-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Discover Tunisia/Pods-Discover Tunisia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E792802CE6573088CC6FB7D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Discover Tunisia/Pods-Discover Tunisia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Discover Tunisia/Pods-Discover Tunisia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Discover Tunisia/Pods-Discover Tunisia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCA7ECDD2388A26000B8D320 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC9C93EA238A9E0A00E52AA5 /* SectionHeaderTableViewCell.swift in Sources */,
+				FC3BCBA7239A6B57002124B1 /* Extensions.swift in Sources */,
+				FCF6C39E23999A4400E8CB83 /* Request.swift in Sources */,
+				FC9C93F7238B0B5700E52AA5 /* ImageTextCollectionViewCell.swift in Sources */,
+				FCFFE77D238B35C200245C30 /* ThreeEqualColumnUICollectionViewLayout.swift in Sources */,
+				FC9C93CC2389990C00E52AA5 /* roundedImageView.swift in Sources */,
+				FC9C93D623899BEB00E52AA5 /* WalkthroughViewController.swift in Sources */,
+				FC9C93CD2389990C00E52AA5 /* Extensions+UIView.swift in Sources */,
+				FCC7C0B92399475300506ED7 /* ApiService.swift in Sources */,
+				FC34DB4A239ADCD300119503 /* MainNavigationController.swift in Sources */,
 				FCA7ECE92388A26000B8D320 /* ViewController.swift in Sources */,
+				FC9C93E4238A94A400E52AA5 /* OriginalImageTabBar.swift in Sources */,
+				FC9C93E6238A9C2100E52AA5 /* HomeViewController.swift in Sources */,
+				FC985D30238C555A0086F60F /* DetailActivityViewController.swift in Sources */,
+				FC9C93D22389990C00E52AA5 /* ModernUITextField.swift in Sources */,
+				FCCF4022238C7BB4005926BA /* MapViewController.swift in Sources */,
+				FCF6C3A223999A9C00E8CB83 /* Weather.swift in Sources */,
+				FCFFE77B238B2FB500245C30 /* PhotosViewController.swift in Sources */,
+				FC9C93E0238A877400E52AA5 /* LoadingScreenViewController.swift in Sources */,
+				FCF6C39A239998F400E8CB83 /* Utils.swift in Sources */,
+				FC9C93D02389990C00E52AA5 /* LoadingShadowRoundedButton.swift in Sources */,
+				FC3BCBAB239A79E1002124B1 /* User.swift in Sources */,
 				FCA7ECE52388A26000B8D320 /* AppDelegate.swift in Sources */,
+				FC34DB53239AF3D900119503 /* City.swift in Sources */,
+				FC985D2E238C49D80086F60F /* DetailSejourItemViewController.swift in Sources */,
+				FC9C93CE2389990C00E52AA5 /* RoundedLabel.swift in Sources */,
+				FC985D2C238C40880086F60F /* SejourItemTableViewCell.swift in Sources */,
 				FCA7ECE72388A26000B8D320 /* SceneDelegate.swift in Sources */,
+				FCF6C3A82399AAC000E8CB83 /* WeatherTableViewCell.swift in Sources */,
+				FC34DB5F239BE2EB00119503 /* IncontournableAddress.swift in Sources */,
+				FCF6C39C23999A1C00E8CB83 /* Location.swift in Sources */,
+				FC3BCBA9239A6CD2002124B1 /* AuthService.swift in Sources */,
+				FC9C93D12389990C00E52AA5 /* RoundedEmtyButton.swift in Sources */,
+				FC9C93E2238A8CD800E52AA5 /* MainTabBarViewController.swift in Sources */,
+				FC985D36238C6FC10086F60F /* DiscoveryContentViewController.swift in Sources */,
+				FCF6C3A023999A5C00E8CB83 /* Current.swift in Sources */,
+				FC985D34238C6D2B0086F60F /* DiscoveryPageUIViewController.swift in Sources */,
+				FC985D26238C14990086F60F /* LeftMenuViewController.swift in Sources */,
+				FC3BCBA5239A3946002124B1 /* SignUpViewController.swift in Sources */,
+				FCE7643C238C0371004F1259 /* PanelController.swift in Sources */,
+				FCC7C0BB239951CA00506ED7 /* BackendError.swift in Sources */,
+				FC9C93DA2389A64000E52AA5 /* WalkthroughContentViewController.swift in Sources */,
+				FC9C93F1238AB6B600E52AA5 /* EventCollectionViewCell.swift in Sources */,
+				FC9C93CA2389990C00E52AA5 /* GradientUIView.swift in Sources */,
+				FC34DB5B239BD91300119503 /* Monsejourelement.swift in Sources */,
+				FC34DB59239BD7DD00119503 /* Sejour.swift in Sources */,
+				FC9C93DE238A0E3500E52AA5 /* RoundedEmptyView.swift in Sources */,
+				FC9C93F3238AD1EB00E52AA5 /* ThreeColumnUICollectionViewLayout.swift in Sources */,
+				FC908D1D238B157800F6750A /* UnavoidableTableViewCell.swift in Sources */,
+				FC34DB55239B0B2400119503 /* EventCalendar.swift in Sources */,
+				FC9C93DC238A087900E52AA5 /* LoginViewController.swift in Sources */,
+				FC34DB5D239BE26900119503 /* Incontournable.swift in Sources */,
+				FC9C93D82389A3FE00E52AA5 /* WalkthroughPageViewController.swift in Sources */,
+				FC9C93EF238AABCD00E52AA5 /* ListEventsTableViewCell.swift in Sources */,
+				FC9C93ED238AA88600E52AA5 /* RoundedCornerImageView.swift in Sources */,
+				FC9C93CF2389990C00E52AA5 /* RoundedShadowView.swift in Sources */,
+				FC34DB57239BAE2100119503 /* Event.swift in Sources */,
+				FCF6C3A52399A91A00E8CB83 /* EmptyTableViewCell.swift in Sources */,
+				FC985D28238C28540086F60F /* DetailEventViewController.swift in Sources */,
+				FC9C93C92389990C00E52AA5 /* LoadingBtn.swift in Sources */,
+				FC200DBB238BC94C000A8F91 /* InfoViewController.swift in Sources */,
+				FC34DB51239AF1BD00119503 /* DiscoveryMainViewController.swift in Sources */,
+				FC985D2A238C3DCB0086F60F /* SejourDetailViewController.swift in Sources */,
+				FC9C93F5238B0A9D00E52AA5 /* SejourTableViewCell.swift in Sources */,
+				FC985D32238C69310086F60F /* DiscoveryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,16 +834,17 @@
 		};
 		FCA7ED0C2388A26200B8D320 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0361B54C97FDE7A5CF5F9D /* Pods-Discover Tunisia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4447HNT5A2;
+				DEVELOPMENT_TEAM = UJ8JGYZ77S;
 				INFOPLIST_FILE = "Discover Tunisia/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.streamerz.Discover-Tunisia";
+				PRODUCT_BUNDLE_IDENTIFIER = net.streamerz.DiscoverTunisia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,16 +853,17 @@
 		};
 		FCA7ED0D2388A26200B8D320 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F197240B947F2998538F9BB /* Pods-Discover Tunisia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4447HNT5A2;
+				DEVELOPMENT_TEAM = UJ8JGYZ77S;
 				INFOPLIST_FILE = "Discover Tunisia/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.streamerz.Discover-Tunisia";
+				PRODUCT_BUNDLE_IDENTIFIER = net.streamerz.DiscoverTunisia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -590,6 +994,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC34DB4B239AEA3500119503 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		FCF6C3A92399BEF600E8CB83 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC34DB4C239AEA3500119503 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC34DB4B239AEA3500119503 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		FC34DB4E239AEA3500119503 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC34DB4B239AEA3500119503 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FCA7ECD92388A26000B8D320 /* Project object */;
 }

@@ -1,0 +1,6 @@
+framework module Pods_Discover_Tunisia {
+  umbrella header "Pods-Discover Tunisia-umbrella.h"
+
+  export *
+  module * { export * }
+}
