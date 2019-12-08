@@ -48,11 +48,7 @@ class Utils {
             // City
             if let city = placeMark.addressDictionary!["City"] as? NSString {
                 print(city)
-                if adresse == "" {
-                    adresse = "\(city)"
-                } else {
-                    adresse = "\(adresse), \(city)"
-                }
+                adresse = "\(city)"
             }
             // Zip code
             if let zip = placeMark.addressDictionary!["ZIP"] as? NSString {

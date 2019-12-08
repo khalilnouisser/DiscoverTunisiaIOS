@@ -19,9 +19,9 @@ class WeatherTableViewCell: UITableViewCell {
     func initElements(with obj: Weather) {
         let date = Date()
         let days = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"]
-        let index = (date.component(.weekday) ?? 0) % 7
+        let index = (date.component(.weekday) ?? 0) % 8 - 1
         dayUILabel.text = "\(days[index]) \(date.component(.day) ?? 0)"
-        regionUILabel.text =  obj.location?.region ?? ""
+        regionUILabel.text =  obj.location?.name ?? ""
         if regionUILabel.text == "" {
             regionUILabel.text =  obj.location?.country ?? ""
         }

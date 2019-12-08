@@ -79,6 +79,31 @@ extension LeftMenuViewController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
+        case 0,1:
+            if let vc = self.storyboard?.instantiateViewController(identifier: "EventsCollectionViewController") as? EventsCollectionViewController {
+                self.panel?.closeLeft()
+                vc.title = list[indexPath.row]
+                vc.index = indexPath.row
+                self.parent?.navigationController?.pushViewController(vc, animated: true)
+            }
+        case 2:
+            if let vc = self.storyboard?.instantiateViewController(identifier: "MonSejoursCollectionViewController") as? MonSejoursCollectionViewController {
+                self.panel?.closeLeft()
+                vc.title = list[indexPath.row]
+                self.parent?.navigationController?.pushViewController(vc, animated: true)
+            }
+        case 3:
+            if let vc = self.storyboard?.instantiateViewController(identifier: "IncontournablesCollectionViewController") as? IncontournablesCollectionViewController {
+                self.panel?.closeLeft()
+                vc.title = list[indexPath.row]
+                self.parent?.navigationController?.pushViewController(vc, animated: true)
+            }
+        case 4:
+            if let vc = self.storyboard?.instantiateViewController(identifier: "SettingsUIViewController") {
+                self.panel?.closeLeft()
+                vc.title = list[indexPath.row]
+                self.parent?.navigationController?.pushViewController(vc, animated: true)
+            }
         case 5:
             AuthService.connectedUser = nil
             loadItems()
@@ -87,5 +112,26 @@ extension LeftMenuViewController : UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+    @IBAction func changeLang(){
+        Utils.changeLanguage(view: self.parent!)
+    }
+    
+    @IBAction func clickFB(){
+        if let url = URL(string: "https://www.facebook.com/DiscoverTunisiacom") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    @IBAction func clickInstagram(){
+        if let url = URL(string: "https://www.instagram.com/discover_tunisia") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    @IBAction func clickTwitter(){
+        if let url = URL(string: "https://twitter.com/DiscoverTUN") {
+            UIApplication.shared.open(url)
+        }
+    }
     
 }

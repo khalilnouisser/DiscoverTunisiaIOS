@@ -141,6 +141,26 @@ class APIService {
         })
     }
     
+    static func getListActualites(completionHandler: @escaping ([Event]?, Error?) -> Void) {
+        AF.request("\(baseURL)/actualites/read.php", method: HTTPMethod.get, encoding: JSONEncoding.default).responseJSON(completionHandler: { response in
+            switch response.result {
+            case let .success(result):
+                if let jsonResponse = result as? [String: Any], let array = jsonResponse["data"] as? [[String: Any]] {
+                    let events = array.map { (elm) -> Event in
+                        Event(JSON: elm)!
+                    }
+                    completionHandler(events, nil)
+                    return
+                } else {
+                    completionHandler(nil, BackendError.connection)
+                    return
+                }
+            case .failure(_):
+               completionHandler(nil, BackendError.technicalProblem)
+            }
+        })
+    }
+    
     static func getListSejour(completionHandler: @escaping ([Sejour]?, Error?) -> Void) {
         AF.request("\(baseURL)/monsejour/read.php", method: HTTPMethod.get, encoding: JSONEncoding.default).responseJSON(completionHandler: { response in
             switch response.result {
@@ -181,15 +201,15 @@ class APIService {
         })
     }
     
-    static func getListSejour(completionHandler: @escaping ([Sejour]?, Error?) -> Void) {
-        AF.request("\(baseURL)/monsejour/read.php", method: HTTPMethod.get, encoding: JSONEncoding.default).responseJSON(completionHandler: { response in
+    static func getListIncontournables(completionHandler: @escaping ([Incontournable]?, Error?) -> Void) {
+        AF.request("\(baseURL)/incontournable/read.php", method: HTTPMethod.get, encoding: JSONEncoding.default).responseJSON(completionHandler: { response in
             switch response.result {
             case let .success(result):
                 if let jsonResponse = result as? [String: Any], let array = jsonResponse["data"] as? [[String: Any]] {
-                    let sejours = array.map { (elm) -> Sejour in
-                        Sejour(JSON: elm)!
+                    let incontournables = array.map { (elm) -> Incontournable in
+                        Incontournable(JSON: elm)!
                     }
-                    completionHandler(sejours, nil)
+                    completionHandler(incontournables, nil)
                     return
                 } else {
                     completionHandler(nil, BackendError.connection)
@@ -201,15 +221,75 @@ class APIService {
         })
     }
     
-    static func getListSejourElementsById(id: String, completionHandler: @escaping ([MonSejourElement]?, Error?) -> Void) {
-        AF.request("\(baseURL)/monsejourelements/read_single.php?id=\(id)", method: HTTPMethod.get, encoding: JSONEncoding.default).responseJSON(completionHandler: { response in
+    static func getListAdressesIncoutournable(id: String, completionHandler: @escaping ([IncontournableAddress]?, Error?) -> Void) {
+        AF.request("\(baseURL)/incontournabledetail/read_single.php?id=\(id)", method: HTTPMethod.get, encoding: JSONEncoding.default).responseJSON(completionHandler: { response in
             switch response.result {
             case let .success(result):
                 if let array = result as? [[String: Any]]{
-                    let sejourElements = array.map { (elm) -> MonSejourElement in
-                        MonSejourElement(JSON: elm)!
+                    let incontournableAddress = array.map { (elm) -> IncontournableAddress in
+                        IncontournableAddress(JSON: elm)!
                     }
-                    completionHandler(sejourElements, nil)
+                    completionHandler(incontournableAddress, nil)
+                    return
+                } else {
+                    completionHandler(nil, BackendError.connection)
+                    return
+                }
+            case .failure(_):
+               completionHandler(nil, BackendError.technicalProblem)
+            }
+        })
+    }
+    
+    static func getListGallery(completionHandler: @escaping ([Gallery]?, Error?) -> Void) {
+        AF.request("\(baseURL)/gallery/read_gallery.php", method: HTTPMethod.get, encoding: JSONEncoding.default).responseJSON(completionHandler: { response in
+            switch response.result {
+            case let .success(result):
+                if let jsonResponse = result as? [String: Any], let array = jsonResponse["data"] as? [[String: Any]] {
+                    let list = array.map { (elm) -> Gallery in
+                        Gallery(JSON: elm)!
+                    }
+                    completionHandler(list, nil)
+                    return
+                } else {
+                    completionHandler(nil, BackendError.connection)
+                    return
+                }
+            case .failure(_):
+               completionHandler(nil, BackendError.technicalProblem)
+            }
+        })
+    }
+    
+    static func search(keyword: String, completionHandler: @escaping ([SearchItem]?, Error?) -> Void) {
+        AF.request("\(baseURL)/search/search.php?keyword=\(keyword)", method: HTTPMethod.get, encoding: JSONEncoding.default).responseJSON(completionHandler: { response in
+            switch response.result {
+            case let .success(result):
+                if let array = result as? [[String: Any]]{
+                    let items = array.map { (elm) -> SearchItem in
+                        SearchItem(JSON: elm)!
+                    }
+                    completionHandler(items, nil)
+                    return
+                } else {
+                    completionHandler(nil, BackendError.connection)
+                    return
+                }
+            case .failure(_):
+               completionHandler(nil, BackendError.technicalProblem)
+            }
+        })
+    }
+    
+    static func getPlaces(completionHandler: @escaping ([Place]?, Error?) -> Void) {
+        AF.request("\(baseURL)/place/read.php", method: HTTPMethod.get, encoding: JSONEncoding.default).responseJSON(completionHandler: { response in
+            switch response.result {
+            case let .success(result):
+                if let jsonResponse = result as? [String: Any], let array = jsonResponse["data"] as? [[String: Any]] {
+                    let places = array.map { (elm) -> Place in
+                        Place(JSON: elm)!
+                    }
+                    completionHandler(places, nil)
                     return
                 } else {
                     completionHandler(nil, BackendError.connection)
@@ -226,7 +306,7 @@ class APIService {
 
             static func login(completionHandler: @escaping (User?, Error?) -> Void) {
                 let loginManager = LoginManager()
-                loginManager.logIn(permissions: [  .email, .custom("user_link") ], viewController: nil) { loginResult in
+                loginManager.logIn(permissions: [  .email], viewController: nil) { loginResult in
                     switch loginResult {
                     case .failed:
                         completionHandler(nil, nil)
@@ -242,7 +322,7 @@ class APIService {
             }
 
             static func getInformations(_ accessToken: AccessToken, completionHandler: @escaping (User?, Error?) -> Void) {
-                let params = ["fields": "id, name, first_name, last_name, picture.type(large), email, link"]
+                let params = ["fields": "id, name, first_name, last_name, picture.type(large), email"]
                 let graphRequest = GraphRequest(graphPath: "me", parameters: params)
                 graphRequest.start { (_, graphResponse, error) in
                     if error != nil {

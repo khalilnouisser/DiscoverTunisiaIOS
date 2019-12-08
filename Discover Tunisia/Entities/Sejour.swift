@@ -13,6 +13,7 @@ struct Sejour : Mappable {
     var id : String?
     var name : String?
     var thumbnail : String?
+    var description : String?
     var cover : String?
     var monsejourelements : [MonSejourElement]?
 
@@ -26,6 +27,7 @@ struct Sejour : Mappable {
         name <- map["name"]
         thumbnail <- map["thumbnail"]
         cover <- map["cover"]
+        description <- map["description"]
         monsejourelements <- map["monsejourelements"]
     }
 

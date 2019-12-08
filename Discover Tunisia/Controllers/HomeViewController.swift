@@ -18,6 +18,19 @@ class HomeViewController: UIViewController {
     var headers = ["", "À la une", "Mon séjour", "Les incontournables"]
     var listEvents : [Event] = []
     var listSejours : [Sejour] = []
+    var listIncontournables : [Incontournable] = []
+    var location: CLLocationCoordinate2D! {
+        didSet {
+            Utils.reverseGeocodeLocation(latitude: location.latitude, longitude: location.longitude) { (adress) in
+                APIService.getCurrentWeather(query: adress) { (weather, error) in
+                    if error == nil {
+                        self.weather = weather!
+                        self.tableview.reloadSections([0], with: UITableView.RowAnimation.automatic)
+                    }
+                }
+            }
+        }
+    }
     
     let locationManager = CLLocationManager()
     var weather: Weather!
@@ -50,6 +63,13 @@ class HomeViewController: UIViewController {
                 self.tableview.reloadSections([2], with: .automatic)
             }
         }
+        
+        APIService.getListIncontournables { (list, error) in
+            if error == nil {
+                self.listIncontournables = list ??  []
+                self.tableview.reloadSections([3], with: .automatic)
+            }
+        }
     }
 
 }
@@ -57,13 +77,8 @@ class HomeViewController: UIViewController {
 extension HomeViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        Utils.reverseGeocodeLocation(latitude: locValue.latitude, longitude: locValue.longitude) { (adress) in
-            APIService.getCurrentWeather(query: adress) { (weather, error) in
-                if error == nil {
-                    self.weather = weather!
-                    self.tableview.reloadSections([0], with: UITableView.RowAnimation.automatic)
-                }
-            }
+        if self.location == nil {
+            self.location = locValue
         }
     }
 }
@@ -81,7 +96,8 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            if headers[indexPath.section] != "" , let cell = tableView.dequeueReusableCell(withIdentifier: "SectionHeaderTableViewCell", for: indexPath) as? SectionHeaderTableViewCell {
+            let hasData = (indexPath.section == 1 && listEvents.count > 0) || (indexPath.section == 2 && listSejours.count > 0) || (indexPath.section == 3 && listIncontournables.count > 0)
+            if headers[indexPath.section] != "" , hasData , let cell = tableView.dequeueReusableCell(withIdentifier: "SectionHeaderTableViewCell", for: indexPath) as? SectionHeaderTableViewCell {
                 cell.initElements(title: headers[indexPath.section])
                 return cell
             }
@@ -105,8 +121,10 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
                 }
             case 3:
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "UnavoidableTableViewCell", for: indexPath) as? UnavoidableTableViewCell {
+                    cell.list = self.listIncontournables
                     cell.didSelected = { index in
                         if let vc = self.storyboard?.instantiateViewController(identifier: "DetailActivityViewController") as? DetailActivityViewController {
+                            vc.incontournable = self.listIncontournables[index]
                             self.navigationController?.pushViewController(vc, animated: true)
                         }
                     }

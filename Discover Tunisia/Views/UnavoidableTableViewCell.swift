@@ -11,8 +11,7 @@ import UIKit
 class UnavoidableTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView : UICollectionView!
-    var list = ["GOLF","SPORTS NAUTIQUES", "CHASSE", "GOLF","SPORTS NAUTIQUES", "CHASSE"]
-    var images = ["s1","s2","s3","s1","s2","s3"]
+    var list : [Incontournable] = []
     var didSelected : ((Int)->())?
 
 }
@@ -24,7 +23,7 @@ extension UnavoidableTableViewCell : UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? ImageTextCollectionViewCell {
-            cell.initElements(title: list[indexPath.row], img: images[indexPath.row])
+            cell.initElements(title: list[indexPath.row].type ?? "", img: list[indexPath.row].cover ?? "")
             return cell
         }
         return UICollectionViewCell()
